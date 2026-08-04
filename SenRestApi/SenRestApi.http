@@ -1,0 +1,6 @@
+@SenRestApi_HostAddress = http://localhost:5204
+
+GET {{SenRestApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
