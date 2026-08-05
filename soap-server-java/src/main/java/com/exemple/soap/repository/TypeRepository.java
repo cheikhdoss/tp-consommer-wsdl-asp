@@ -18,6 +18,9 @@ public class TypeRepository {
         save(new Type(null, "Informatique", "Matériel et accessoires informatiques"));
         save(new Type(null, "Bureau", "Fournitures de bureau"));
         save(new Type(null, "Maison", "Articles pour la maison"));
+        save(new Type(null, "Sport", "Équipement sportif et fitness"));
+        save(new Type(null, "Mode", "Vêtements et accessoires de mode"));
+        save(new Type(null, "Alimentation", "Produits alimentaires et boissons"));
     }
 
     public List<Type> findAll() {
