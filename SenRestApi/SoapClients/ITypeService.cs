@@ -8,18 +8,18 @@ namespace SenRestApi.SoapClients;
 [XmlSerializerFormat]
 public interface ITypeService
 {
-    [OperationContract(Action = "", ReplyAction = "*")]
+    [OperationContract(Action = "")]
     TypeProduit getType(long id);
 
-    [OperationContract(Action = "", ReplyAction = "*")]
+    [OperationContract(Action = "")]
     TypeProduit createType(TypeProduit type);
 
-    [OperationContract(Action = "", ReplyAction = "*")]
+    [OperationContract(Action = "")]
     TypeProduit[] getAllTypes();
 
-    [OperationContract(Action = "", ReplyAction = "*")]
+    [OperationContract(Action = "")]
     TypeProduit updateType(long id, TypeProduit type);
 
-    [OperationContract(Action = "", ReplyAction = "*")]
+    [OperationContract(Action = "")]
     bool deleteType(long id);
 }

@@ -8,18 +8,18 @@ namespace SenRestApi.SoapClients;
 [XmlSerializerFormat]
 public interface IProduitService
 {
-    [OperationContract(Action = "", ReplyAction = "*")]
+    [OperationContract(Action = "")]
     Produit getProduit(long id);
 
-    [OperationContract(Action = "", ReplyAction = "*")]
+    [OperationContract(Action = "")]
     Produit createProduit(Produit produit);
 
-    [OperationContract(Action = "", ReplyAction = "*")]
+    [OperationContract(Action = "")]
     Produit[] getAllProduits();
 
-    [OperationContract(Action = "", ReplyAction = "*")]
+    [OperationContract(Action = "")]
     Produit updateProduit(long id, Produit produit);
 
-    [OperationContract(Action = "", ReplyAction = "*")]
+    [OperationContract(Action = "")]
     bool deleteProduit(long id);
 }

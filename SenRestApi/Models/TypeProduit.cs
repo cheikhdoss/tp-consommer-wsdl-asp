@@ -2,15 +2,15 @@ using System.Xml.Serialization;
 
 namespace SenRestApi.Models;
 
-[XmlType(Namespace = "http://service.soap.exemple.com/")]
+[XmlType(TypeName = "type", Namespace = "")]
 public class TypeProduit
 {
-    [XmlElement]
+    [XmlElement("id")]
     public long Id { get; set; }
 
-    [XmlElement]
+    [XmlElement("libelle")]
     public string? Libelle { get; set; }
 
-    [XmlElement]
+    [XmlElement("description")]
     public string? Description { get; set; }
 }
